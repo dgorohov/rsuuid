@@ -1,13 +1,13 @@
-name: Build and upload binaries to release
+name: Build
 
-on:
-  push:
-    tags:
-      - '*'
+on: pull_request_target
+permissions:
+  pull-requests: write
+  contents: write
 
 jobs:
   release:
-    name: Build and Release
+    name: Build
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -29,9 +29,3 @@ jobs:
 
       - name: Build project
         run: cargo build --release --locked && strip target/release/rsuuid
-
-      - name: Upload binaries to release
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ matrix.asset_name }}
-          path: target/release/${{ matrix.artifact_name }}
