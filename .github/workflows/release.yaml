@@ -38,7 +38,7 @@ jobs:
           name: ${{ matrix.asset_name }}
           path: target/release/${{ matrix.artifact_name }}
 
-      - run: target/release/${{ matrix.artifact_name }} target/release/${{ matrix.asset_name }}
+      - run: cp -v target/release/${{ matrix.artifact_name }} target/release/${{ matrix.asset_name }}
 
       - name: Release
         uses: softprops/action-gh-release@v1
