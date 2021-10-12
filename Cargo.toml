@@ -1,0 +1,12 @@
+[package]
+name = "rsuuid"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rand = "0.8.0"
+
+[dependencies.uuid]
+version = "0.8"
+default-features = false
+features = ["v1", "v4"]
