@@ -52,5 +52,5 @@ jobs:
         env:
           COMMITTER_TOKEN: ${{ secrets.HOMEBREW_GITHUB_TOKEN }}
         with:
-          homebrew-tap: dgorohov/home
+          homebrew-tap: dgorohov/homebrew-home
           formula-name: rsuuid
