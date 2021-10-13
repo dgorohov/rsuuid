@@ -45,3 +45,12 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: target/release/${{ matrix.asset_name }}
+
+      - name: Bump homebrew-core formula
+        uses: mislav/bump-homebrew-formula-action@v1
+        if: "matrix.os == 'macos-latest' && !contains(github.ref, '-')" # skip prereleases
+        env:
+          COMMITTER_TOKEN: ${{ secrets.HOMEBREW_GITHUB_TOKEN }}
+        with:
+          homebrew-tap: dgorohov/home
+          formula-name: rsuuid
