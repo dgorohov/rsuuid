@@ -14,3 +14,20 @@ It prints nothing more since I'd like to put the content directly into the clipb
 ```
 # rsuuid v1 | pbcopy
 ```
+
+Installing:
+
+On Linux:
+```
+$ curl https://github.com/dgorohov/rsuuid/releases/download/v0.1.0/rsuuid-linux-amd64 -O /usr/local/bin/rsuuid
+$ chmod +x /usr/local/bin/rsuuid
+```
+
+On Mac:
+
+```
+$ curl https://github.com/dgorohov/rsuuid/releases/download/v0.1.0/rsuuid-macos-amd64 -O /usr/local/bin/rsuuid
+$ chmod +x /usr/local/bin/rsuuid
+```
+
+Brew support will come later, once I'd have a time.
