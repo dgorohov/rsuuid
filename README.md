@@ -19,14 +19,14 @@ Installing:
 
 On Linux:
 ```
-$ curl https://github.com/dgorohov/rsuuid/releases/download/v0.1.0/rsuuid-linux-amd64 -O /usr/local/bin/rsuuid
+$ curl https://github.com/dgorohov/rsuuid/releases/download/v0.1.3/rsuuid-linux-amd64 -O /usr/local/bin/rsuuid
 $ chmod +x /usr/local/bin/rsuuid
 ```
 
 On Mac:
 
 ```
-$ curl https://github.com/dgorohov/rsuuid/releases/download/v0.1.0/rsuuid-macos-amd64 -O /usr/local/bin/rsuuid
+$ curl https://github.com/dgorohov/rsuuid/releases/download/v0.1.3/rsuuid-macos-amd64 -O /usr/local/bin/rsuuid
 $ chmod +x /usr/local/bin/rsuuid
 ```
 
